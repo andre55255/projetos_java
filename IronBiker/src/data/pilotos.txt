@@ -1,0 +1,7 @@
+-André,3
+-Waguinho,4
+-Gilson,2
+-Jonathan,1
+-Matheus,5
+-Francesco,6
+-Luiz,7
