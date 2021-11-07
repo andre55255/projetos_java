@@ -36,4 +36,13 @@ public class Piloto {
     public void setTrilha(Trilha trilha) {
         this.trilha = trilha;
     }
+    
+    @Override
+    public String toString() {
+        return String.format(
+                "\nPiloto: %s, Trilha: %s",
+                this.nome,
+                this.trilha.getNome()
+        );
+    }
 }

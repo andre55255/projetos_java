@@ -10,7 +10,7 @@ public class Main {
         String pilotos = CarregarArquivos.lerTxt("pilotos.txt");
         
         if (pilotos.length() == 0) {
-            JOptionPane.showMessageDialog(null, "Não há pilotos no arquivo de 'pilotos.txt'");
+            JOptionPane.showMessageDialog(null, "Cadastre os pilotos no arquivo de 'pilotos.txt'\nEx: -Nome do piloto,2");
             return;
         } else {
             listas.Pilotos.insere(pilotos);
