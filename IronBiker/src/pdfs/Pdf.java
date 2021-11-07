@@ -50,45 +50,50 @@ public abstract class Pdf {
             document.add(Chunk.NEWLINE);
             document.add(Chunk.NEWLINE);
             
-            // Criando seção de sorteios de sábado
             Font fontSubTitle = new Font(Font.FontFamily.UNDEFINED, 18, Font.BOLDITALIC, BaseColor.BLACK);
-            Phrase subTitleSaturdayPhrase = new Phrase(18F, "\nSábado", fontSubTitle);
-            Paragraph subTitleSaturday = new Paragraph(subTitleSaturdayPhrase);
-            subTitleSaturday.setAlignment(Element.ALIGN_LEFT);
-            document.add(subTitleSaturday);
-            
-            // Adicionando sorteios de sabádo
-            StringBuilder sbSorteioSabado = new StringBuilder();
-            for (Piloto p : listas.Pilotos.pilotosSabado) {
-                sbSorteioSabado.append(p.toString());
-            }
-            
             Font fontSorteio = new Font(Font.FontFamily.HELVETICA, 12, Font.NORMAL, BaseColor.BLACK);
-            Phrase sorteioSabadoPhrase = new Phrase(12F, sbSorteioSabado.toString(), fontSorteio);
-            Paragraph sorteioSabado = new Paragraph(sorteioSabadoPhrase);
-            document.add(Chunk.NEWLINE);
-            document.add(Chunk.NEWLINE);
-            document.add(sorteioSabado);
             
-            // Criando seção de sorteios de domingo
-            Phrase subTitleSundayPhrase = new Phrase(18F, "\nDomingo", fontSubTitle);
-            Paragraph subTitleSunday = new Paragraph(subTitleSundayPhrase);
-            subTitleSunday.setAlignment(Element.ALIGN_LEFT);
-            document.add(Chunk.NEWLINE);
-            document.add(Chunk.NEWLINE);
-            document.add(subTitleSunday);
-            
-            // Adicionando sorteios de domingo
-            StringBuilder sbSorteioDomingo = new StringBuilder();
-            for (Piloto p : listas.Pilotos.pilotosDomingo) {
-                sbSorteioDomingo.append(p.toString());
+            if (listas.Pilotos.pilotosSabado.get(0).getTrilha() != null) {
+                // Criando seção de sorteios de sábado
+                Phrase subTitleSaturdayPhrase = new Phrase(18F, "\nSábado", fontSubTitle);
+                Paragraph subTitleSaturday = new Paragraph(subTitleSaturdayPhrase);
+                subTitleSaturday.setAlignment(Element.ALIGN_LEFT);
+                document.add(subTitleSaturday);
+
+                // Adicionando sorteios de sabádo
+                StringBuilder sbSorteioSabado = new StringBuilder();
+                for (Piloto p : listas.Pilotos.pilotosSabado) {
+                    sbSorteioSabado.append(p.toString());
+                }
+
+                Phrase sorteioSabadoPhrase = new Phrase(12F, sbSorteioSabado.toString(), fontSorteio);
+                Paragraph sorteioSabado = new Paragraph(sorteioSabadoPhrase);
+                document.add(Chunk.NEWLINE);
+                document.add(Chunk.NEWLINE);
+                document.add(sorteioSabado);
             }
             
-            Phrase sorteioDomingoPhrase = new Phrase(12F, sbSorteioDomingo.toString(), fontSorteio);
-            Paragraph sorteioDomingo = new Paragraph(sorteioDomingoPhrase);
-            document.add(Chunk.NEWLINE);
-            document.add(Chunk.NEWLINE);
-            document.add(sorteioDomingo);
+            if (listas.Pilotos.pilotosDomingo.get(0).getTrilha() != null) {
+                // Criando seção de sorteios de domingo
+                Phrase subTitleSundayPhrase = new Phrase(18F, "\nDomingo", fontSubTitle);
+                Paragraph subTitleSunday = new Paragraph(subTitleSundayPhrase);
+                subTitleSunday.setAlignment(Element.ALIGN_LEFT);
+                document.add(Chunk.NEWLINE);
+                document.add(Chunk.NEWLINE);
+                document.add(subTitleSunday);
+
+                // Adicionando sorteios de domingo
+                StringBuilder sbSorteioDomingo = new StringBuilder();
+                for (Piloto p : listas.Pilotos.pilotosDomingo) {
+                    sbSorteioDomingo.append(p.toString());
+                }
+
+                Phrase sorteioDomingoPhrase = new Phrase(12F, sbSorteioDomingo.toString(), fontSorteio);
+                Paragraph sorteioDomingo = new Paragraph(sorteioDomingoPhrase);
+                document.add(Chunk.NEWLINE);
+                document.add(Chunk.NEWLINE);
+                document.add(sorteioDomingo);
+            }
             
             return true;
         } catch (IOException | DocumentException e) {
