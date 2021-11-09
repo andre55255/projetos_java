@@ -1,7 +1,6 @@
--André,3
--Waguinho,4
--Gilson,2
--Jonathan,1
--Matheus,5
--Francesco,6
--Luiz,7
+-Aldinho, 3
+-Burrinho, 5 
+-Gustavo, 4
+-Juninho Clone do Camelinho, 1
+-Mãonzinha, 6
+-Ricardo, 2

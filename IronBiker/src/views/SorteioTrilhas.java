@@ -226,30 +226,40 @@ public class SorteioTrilhas extends javax.swing.JFrame {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/Logo.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/LogoAtual.jpg"))); // NOI18N
 
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Sábado");
 
+        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Domingo");
 
+        jLabel3.setBackground(new java.awt.Color(255, 0, 0));
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 0, 0));
         jLabel3.setText("Piloto:");
 
+        jLabel20.setBackground(new java.awt.Color(255, 0, 0));
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(255, 0, 0));
         jLabel20.setText("Número:");
 
         campoNumero.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        campoNumero.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        campoNumero.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         campoTrilha.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        campoTrilha.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        campoTrilha.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
+        botaoSorteio.setForeground(new java.awt.Color(255, 0, 0));
         botaoSorteio.setText("Sortear");
         botaoSorteio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         botaoSorteio.setFocusable(false);
@@ -259,7 +269,9 @@ public class SorteioTrilhas extends javax.swing.JFrame {
             }
         });
 
+        jLabel23.setBackground(new java.awt.Color(255, 0, 0));
         jLabel23.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(255, 0, 0));
         jLabel23.setText("Trilha:");
 
         comboBoxPiloto.setMaximumRowCount(3);
@@ -269,14 +281,18 @@ public class SorteioTrilhas extends javax.swing.JFrame {
             }
         });
 
+        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Sistema de sorteio de trilhas aos Pilotos");
 
         jrbSabado.setBackground(new java.awt.Color(255, 255, 255));
         btnGroupDia.add(jrbSabado);
+        jrbSabado.setForeground(new java.awt.Color(255, 0, 0));
         jrbSabado.setSelected(true);
         jrbSabado.setText("Sábado");
+        jrbSabado.setBorder(null);
         jrbSabado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrbSabadoActionPerformed(evt);
@@ -285,7 +301,9 @@ public class SorteioTrilhas extends javax.swing.JFrame {
 
         jrbDomingo.setBackground(new java.awt.Color(255, 255, 255));
         btnGroupDia.add(jrbDomingo);
+        jrbDomingo.setForeground(new java.awt.Color(255, 0, 0));
         jrbDomingo.setText("Domingo");
+        jrbDomingo.setBorder(null);
         jrbDomingo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jrbDomingoActionPerformed(evt);
@@ -308,119 +326,121 @@ public class SorteioTrilhas extends javax.swing.JFrame {
         });
 
         ts1.setEditable(false);
-        ts1.setBackground(new java.awt.Color(255, 255, 255));
+        ts1.setBackground(new java.awt.Color(0, 0, 0));
         ts1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         ts1.setForeground(new java.awt.Color(255, 0, 51));
         ts1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ts1.setText("Fazenda da palha / Entrada da trilha do dinossauro");
-        ts1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        ts1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         ts2.setEditable(false);
-        ts2.setBackground(new java.awt.Color(255, 255, 255));
+        ts2.setBackground(new java.awt.Color(0, 0, 0));
         ts2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         ts2.setForeground(new java.awt.Color(255, 0, 51));
         ts2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ts2.setText("Fazenda dos Rola / Ponte das Criolas");
-        ts2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        ts2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         ts3.setEditable(false);
-        ts3.setBackground(new java.awt.Color(255, 255, 255));
+        ts3.setBackground(new java.awt.Color(0, 0, 0));
         ts3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         ts3.setForeground(new java.awt.Color(255, 0, 51));
         ts3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ts3.setText("Ponte do gama / Trilha do Waguinho");
-        ts3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        ts3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         ts4.setEditable(false);
-        ts4.setBackground(new java.awt.Color(255, 255, 255));
+        ts4.setBackground(new java.awt.Color(0, 0, 0));
         ts4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         ts4.setForeground(new java.awt.Color(255, 0, 51));
         ts4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ts4.setText("Aguas Claras / Asfalto");
-        ts4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        ts4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         ts5.setEditable(false);
-        ts5.setBackground(new java.awt.Color(255, 255, 255));
+        ts5.setBackground(new java.awt.Color(0, 0, 0));
         ts5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         ts5.setForeground(new java.awt.Color(255, 0, 51));
         ts5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ts5.setText("Fazenda Celso / Monsenhor Horta");
-        ts5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        ts5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         ts6.setEditable(false);
-        ts6.setBackground(new java.awt.Color(255, 255, 255));
+        ts6.setBackground(new java.awt.Color(0, 0, 0));
         ts6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         ts6.setForeground(new java.awt.Color(255, 0, 51));
         ts6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ts6.setText("Linha de Monsenhor Horta / Ribeirão");
-        ts6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        ts6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         ts7.setEditable(false);
-        ts7.setBackground(new java.awt.Color(255, 255, 255));
+        ts7.setBackground(new java.awt.Color(0, 0, 0));
         ts7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         ts7.setForeground(new java.awt.Color(255, 0, 51));
         ts7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ts7.setText("Rota a ser definida");
-        ts7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        ts7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         td6.setEditable(false);
-        td6.setBackground(new java.awt.Color(255, 255, 255));
+        td6.setBackground(new java.awt.Color(0, 0, 0));
         td6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         td6.setForeground(new java.awt.Color(255, 0, 51));
         td6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         td6.setText("Fazenda dos Rola / Garganta do diabo");
-        td6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        td6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         td7.setEditable(false);
-        td7.setBackground(new java.awt.Color(255, 255, 255));
+        td7.setBackground(new java.awt.Color(0, 0, 0));
         td7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         td7.setForeground(new java.awt.Color(255, 0, 51));
         td7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         td7.setText("Senhor Cornélio / Ribeirão");
-        td7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        td7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         td5.setEditable(false);
-        td5.setBackground(new java.awt.Color(255, 255, 255));
+        td5.setBackground(new java.awt.Color(0, 0, 0));
         td5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         td5.setForeground(new java.awt.Color(255, 0, 51));
         td5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         td5.setText("Trilha da onça / Fazenda dos Rola");
-        td5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        td5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         td4.setEditable(false);
-        td4.setBackground(new java.awt.Color(255, 255, 255));
+        td4.setBackground(new java.awt.Color(0, 0, 0));
         td4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         td4.setForeground(new java.awt.Color(255, 0, 51));
         td4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         td4.setText(" Estrada de Bicas / Ponte das Criolas");
-        td4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        td4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         td3.setEditable(false);
-        td3.setBackground(new java.awt.Color(255, 255, 255));
+        td3.setBackground(new java.awt.Color(0, 0, 0));
         td3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         td3.setForeground(new java.awt.Color(255, 0, 51));
         td3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         td3.setText("Fazenda da Palha / Fred Kruger");
-        td3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        td3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         td2.setEditable(false);
-        td2.setBackground(new java.awt.Color(255, 255, 255));
+        td2.setBackground(new java.awt.Color(0, 0, 0));
         td2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         td2.setForeground(new java.awt.Color(255, 0, 51));
         td2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         td2.setText("Trilha das cangas / Igreja de Camargos");
-        td2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        td2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         td1.setEditable(false);
-        td1.setBackground(new java.awt.Color(255, 255, 255));
+        td1.setBackground(new java.awt.Color(0, 0, 0));
         td1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         td1.setForeground(new java.awt.Color(255, 0, 51));
         td1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         td1.setText("TPM / Ponto de água Lau");
-        td1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        td1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
         checkBoxAlteraTrilhas.setBackground(new java.awt.Color(255, 255, 255));
+        checkBoxAlteraTrilhas.setForeground(new java.awt.Color(255, 0, 0));
         checkBoxAlteraTrilhas.setText("Alterar nomes de trilhas");
+        checkBoxAlteraTrilhas.setBorder(null);
         checkBoxAlteraTrilhas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 checkBoxAlteraTrilhasActionPerformed(evt);
@@ -432,13 +452,13 @@ public class SorteioTrilhas extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(54, 54, 54)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 369, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 53, Short.MAX_VALUE))
+                        .addGap(0, 28, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(84, 84, 84)
                         .addComponent(jlErro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
